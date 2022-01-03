@@ -3,29 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Odin Recipes</title>
 </head>
 
 <body>
-    <h1 class="recipe-header">
-        Curry Recipes
-    </h1>
-    <div class="recipe-list">
-        <ul>
-            <li>
-                <a href="recipes/japanese-curry.html">
-                    <img src="assets/katsu_curry.jpg" />
-                    <h3>Katsu Curry (Japanese Curry with Chicken Cutlet)</h3>
-                </a>
-            </li>
-            <li>
-                <a href="recipes/indian-curry.html">
-                    <img src="assets/indian_curry_tikka_masasla" />
-                    <h3>Chicken Tikka Masala</h3>
-                </a>
-            </li>
-            <li><a href="recipes/thai-curry.html">Gaeng Khiao Waan Gai (Thai Green Curry with Chicken)</a></li>
-        </ul>
+    <header class="header">
+        <a>
+            <h1 class="header-name">
+                Odin Recipes
+            </h1>
+        </a>
+        <form class="header-form">
+            <input class="header-input" type="text" placeholder=" Search a recipe" />
+        </form>
+        <a>
+            <h5 class="header-about">
+                about
+            </h5>
+        </a>
+    </header>
+
+    <div class="main">
+        <div class="recipe-list-wrapper">
+            <ul class="recipe-list">
+                <li class="recipe-item">
+                    <a class="recipe-links" href="recipes/japanese-curry.html">
+                        <img class="recipe-image" src="assets/katsu_curry.jpg" />
+                        <div class="recipe-name-wrapper">
+                            <h2 class="recipe-name">Katsu Curry (Japanese Curry with Chicken Cutlet)</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipe-item">
+                    <a class="recipe-links" href="recipes/indian-curry.html">
+                        <img class="recipe-image" src="assets/indian_curry_tikka_masala.jpg" />
+                        <div class="recipe-name-wrapper">
+                            <h2 class="recipe-name">Chicken Tikka Masala</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipe-item">
+                    <a class="recipe-links" href="recipes/thai-curry.html">
+                        <img class="recipe-image" src="assets/thai_curry.webp" />
+                        <div class="recipe-name-wrapper">
+                            <h2 class="recipe-name">Gaeng Khiao Waan Gai (Thai Green Curry with Chicken)</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
